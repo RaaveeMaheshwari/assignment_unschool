@@ -3,21 +3,18 @@
 
 int main()
 {
-    int a,b,sum,diff,pro,mod;
-    float d;
-    printf("Enter a number :");
-    scanf("%d",&a);
-    printf("Enter another number :");
-    scanf("%d",&b);
-    sum = a+b;
-    diff = a-b;
-    pro = a*b;
-    d = a/b;
-    mod = a%b ;
-    printf("Sum of %d and %d is %d \n",a,b,sum);
-    printf("Difference of %d and %d is %d \n" ,a,b,diff);
-    printf("Product of %d and %d is %d \n",a,b,pro);
-    printf("Quotient of %d and %d is %f \n",a,b,d);
-    printf("Remainder of %d and %d is %d",a,b,mod);
+    float per;
+    printf("Enter the percentage of the student :");
+    scanf("%f", &per);
+    if(per>80)
+        printf("\nA grade");
+    else if(per<80 && per>=70)
+        printf("\nB grade");
+    else if(per<70 && per>=60)
+          printf("C grade");
+    else if(per<60 && per>=45)
+        printf("D grade");
+    else
+         printf("Fail");
     return 0;
 }
